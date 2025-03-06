@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useAuthStore } from '../store/authStore';
 import Navbar from '../components/Navbar';
 import Chatbot from '../components/Chatbot';
@@ -84,12 +84,6 @@ const fadeIn = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: -20 }
-};
-
-const slideIn = {
-  initial: { x: 60, opacity: 0 },
-  animate: { x: 0, opacity: 1 },
-  exit: { x: -60, opacity: 0 }
 };
 
 // Add new animation variants
@@ -469,7 +463,8 @@ const LandingPage = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center justify-center px-6 sm:px-8 py-2.5 sm:py-3 border-2 border-green-600 dark:border-green-500 text-sm sm:text-base font-medium rounded-full text-green-600 dark:text-green-400 hover:bg-green-50 dark:hover:bg-green-900/30 md:py-4 md:text-lg md:px-10"
+                  onClick={handleLoginClick}
+                  className="w-fit mx-auto sm:mx-0 inline-flex items-center justify-center px-4 sm:px-8 py-2 sm:py-3 border-2 border-green-600 dark:border-green-500 text-sm sm:text-base font-medium rounded-full text-green-600 dark:text-green-400 hover:bg-green-50 dark:hover:bg-green-900/30 md:py-4 md:text-lg md:px-10 whitespace-nowrap"
                 >
                   Pelajari Lebih Lanjut
                 </motion.button>
@@ -527,7 +522,7 @@ const LandingPage = () => {
             variants={itemVariants}
             className="text-center max-w-3xl mx-auto px-4"
           >
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+            <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
               Program Unggulan Ramadhan
             </h2>
             <p className="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-300">
