@@ -101,7 +101,7 @@ const Navbar = () => {
             className="md:hidden p-2 transition-all duration-300 ease-in-out"
           >
             <svg 
-              className={`w-6 h-6 text-gray-700 transition-transform duration-300 ease-in-out ${
+              className={`w-6 h-6 text-gray-700 dark:text-gray-300 transition-transform duration-300 ease-in-out ${
                 isMenuOpen ? 'rotate-180' : 'rotate-0'
               }`}
               fill="none" 
