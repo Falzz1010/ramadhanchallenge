@@ -131,7 +131,7 @@ const Navbar = () => {
               {/* Dark Mode Toggle Button (Mobile) */}
               <button
                 onClick={() => setDarkMode(!darkMode)}
-                className="flex items-center text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400 transition-all duration-200 text-sm font-medium px-2 transform hover:translate-x-2"
+                className="flex items-center text-gray-700 dark:text-gray-300 text-sm font-medium px-2"
               >
                 {darkMode ? 'Light Mode' : 'Dark Mode'}
                 <span className="ml-2">
@@ -155,8 +155,7 @@ const Navbar = () => {
                 <Link 
                   key={item}
                   to={`/${item.toLowerCase()}`} 
-                  className="text-gray-700 hover:text-green-500 transition-all duration-200 text-sm font-medium px-2
-                         transform hover:translate-x-2"
+                  className="text-gray-700 dark:text-gray-300 text-sm font-medium px-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item}
@@ -169,9 +168,6 @@ const Navbar = () => {
                 }}
                 className="text-left px-5 py-2.5 rounded-lg text-sm font-medium text-white
                        bg-gradient-to-r from-green-600 to-green-500
-                       hover:from-green-700 hover:to-green-600
-                       transition-all duration-200 shadow-md hover:shadow-lg
-                       transform hover:translate-x-2
                        mx-2"
               >
                 Login
