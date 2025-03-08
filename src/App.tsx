@@ -14,7 +14,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LandingPage from './pages/LandingPage';
 import ProgramPage from './pages/ProgramPage';
-import JadwalPage from './pages/JadwalPage';
+import JadwalPage from './pages/JadwalPage';  
 import KomunitasPage from './pages/KomunitasPage';  
 import BlogPage from './pages/BlogPage';
 
