@@ -26,7 +26,7 @@ function App() {
   React.useEffect(() => {
     setLoginAllowed(false);
   }, []);
-
+ 
   React.useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
