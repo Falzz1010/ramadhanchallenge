@@ -6,7 +6,7 @@ import CreatePostForm from '../components/CreatePostForm';
 const CommunityPage: React.FC = () => {
   const { posts, fetchPosts, isLoading } = useCommunityStore();
 
-  useEffect(() => {
+  useEffect(() => { 
     fetchPosts();
   }, []);
 
