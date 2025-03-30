@@ -7,7 +7,7 @@ import ProgressChart from '../components/ProgressChart';
 import LeaderboardCard from '../components/LeaderboardCard';
 import { supabase } from '../lib/supabase';
 import { Challenge } from '../types/types';
-import BadgeDisplay from '../components/BadgeDisplay';
+import BadgeDisplay from '../components/BadgeDisplay'; 
   
 interface LeaderboardUser {
   id: string;
