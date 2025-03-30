@@ -8,7 +8,7 @@ import LeaderboardCard from '../components/LeaderboardCard';
 import { supabase } from '../lib/supabase';
 import { Challenge } from '../types/types';
 import BadgeDisplay from '../components/BadgeDisplay';
- 
+  
 interface LeaderboardUser {
   id: string;
   name: string;
