@@ -2,7 +2,7 @@ export const getCurrentDay = (): number => {
   // Untuk testing, uncomment baris di bawah ini
   return 2; // Set ke hari ke-2 untuk testing
   
-  const startDate = new Date('2024-03-11'); // Tanggal mulai Ramadhan 2024
+  const startDate = new Date('2025-03-11'); // Tanggal mulai Ramadhan 2025
   const today = new Date();
   
   // Reset jam ke midnight untuk perbandingan yang akurat
