@@ -77,7 +77,7 @@ function App() {
                   ) : (
                     <Navigate to="/" replace />
                   )
-                } 
+                }  
               />
               <Route 
                 path="/badges" 
