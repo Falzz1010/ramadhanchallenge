@@ -11,7 +11,7 @@ import ProfilePage from './pages/ProfilePage';
 import { useThemeStore } from './store/themeStore';
 import { AuthProvider } from './components/AuthProvider';
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';   
 import LandingPage from './pages/LandingPage';
 import ProgramPage from './pages/ProgramPage';
 import JadwalPage from './pages/JadwalPage';  
