@@ -16,7 +16,7 @@ import LandingPage from './pages/LandingPage';
 import ProgramPage from './pages/ProgramPage';
 import JadwalPage from './pages/JadwalPage';  
 import KomunitasPage from './pages/KomunitasPage';  
-import BlogPage from './pages/BlogPage';
+import BlogPage from './pages/BlogPage'; 
 
 function App() {
   const { user, isLoginAllowed, setLoginAllowed } = useAuthStore();
